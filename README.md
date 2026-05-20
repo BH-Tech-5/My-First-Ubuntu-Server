@@ -4,7 +4,7 @@ After PMIC failure on Raspberry Pi 5, I realized that I needed a robust piece of
 
 **Project Goals**
 1. Re-establish progress with Localized Artificial Intelligence models, connected utilizing end-to-end encryption (Tailscale)
-2. Re-establish RTSP stream utilizing mediamtx service, etc.
+2. Re-establish RTSP/VLC USB camera stream utilizing mediamtx service, etc.
 3. Re-gain familiarity with docker, system services,
-4. Learn how to deploy ubuntu OS vice something "easier" like Linux Mint / Cinnamon used so far.
+4. Learn how to deploy ubuntu OS vice Linux Mint / Cinnamon used so far. Increase familiarity with Linux CLI deployment and behaviour instead of pre-configured user-friendly GUI.
 5. Expiriment with DevOPS, terraform, ansible, and more to expand my personal knowledge base.
