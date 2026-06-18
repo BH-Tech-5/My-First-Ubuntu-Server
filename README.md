@@ -14,5 +14,8 @@ After PMIC failure on Raspberry Pi 5, I realized that I needed a robust piece of
 1. Localized LLMs are functional and accessible via self-hosted .py GUI
 2. RTSP not re-established yet
 3. Continuous progress with docker, python venv
-4. Ubuntu OS deployment successful and Linux CLI familiarity strongly improved. Easily able to navigate file structures, edit files, check services, and system performance utilizing Bash.
+4. Ubuntu OS deployment successful and Linux CLI familiarity strongly improved. Easily able to navigate file structures, edit files, check services, and system performance utilizing CLI via headless ssh.
 5. No re-deployment utilizing terraform/ansible yet.
+
+**Update 18 June, 2026
+Re-initialized MediaMTX RTSP and established system-level background service to auto-start RTSP upon system start-up. Functionality via VLC confirmed.
