@@ -18,4 +18,5 @@ After PMIC failure on Raspberry Pi 5, I realized that I needed a robust piece of
 5. No re-deployment utilizing terraform/ansible yet.
 
 **Update 18 June, 2026
+Downloaded repository for Odysseus, open source front-end for self-hosted models. It works well, but I've noticed that the gemma models don't do very well with my CPU, even with 16GB RAM overhead. Tried Qwen models and they function somewhat better, but I can tell that the hardware is a bottleneck for speed and accuracy. SearXNG parsing works better with the smaller Qwen models.
 Re-initialized MediaMTX RTSP and established system-level background service to auto-start RTSP upon system start-up. Functionality via VLC confirmed.
