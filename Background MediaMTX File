@@ -1,0 +1,24 @@
+# create and edit this file with the following command:
+# sudo nano /etc/systemd/system/mediamtx.service
+
+
+[Unit]
+Description=MediaMTX RTSP Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/YOURUSERNAME/mediamtx
+#Pathway to the directory where you have the mediamtx executable
+ExecStart=/home/YOURUSERNAME/mediamtx/mediamtx
+#Points directly to the executable - make sure the last item is not a directory, but the executable service
+#If you receive the error that mediamtx is a directory, this line needs to be adjusted as it does not have the extra /mediamtx (pointing in the directory to the executable)
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
+
