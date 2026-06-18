@@ -1,0 +1,30 @@
+# MediaMTX Configuration - Clean Version
+logLevel: info
+rtspAddress: :8554
+
+# Internal Authentication for Local Publishing
+authMethod: internal
+authInternalUsers:
+  - user: YOURUSERNAME
+    pass: YOURPASSWORD
+    permissions:
+      - action: publish
+        path: cam
+      - action: read
+        path: cam
+
+# Path Configuration for USB Camera
+paths:
+  cam:
+    # Launches ffmpeg on initialization to pull from local USB V4L2 device
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -f rtsp rtsp://YOURUSERNAME:YOURPASSWORD>
+    runOnInitRestart: yes
+
+#To view the stream, use VLC player and open Network Stream rtsp://YOURUSERNAME:YOURPASSWORD@YOURSERVERIP:8554/cam
+#I use Tailscale to make sure that no one can see this stream except for myself
+#If ./mediamtx results in errors not being able to open /dev/video0, then "video" needs to be added to user groups.
+# Add the current user to the video subsystem group using this command:
+# sudo usermod -aG video $USER
+
+# Log out and log back in for the group policy changes to take effect (if headless ssh, then exit -> ssh again), then verify with this command:
+# groups
