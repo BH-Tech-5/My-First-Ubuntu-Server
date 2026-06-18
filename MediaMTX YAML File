@@ -1,4 +1,8 @@
 # MediaMTX Configuration - Clean Version
+# To parse down the massive YAML file that comes with the standard repo for MediaMTX, use this clean version instead for secure Tailscale streams:
+# Use nano mediamtx.yaml, then Ctrl+K to cut the contents of the entire YAML file. Paste this code, then Ctrl+O to write out, enter, then Ctrl+X to exit
+# If you change the username and password, make sure to restart the MediaMTX service for the changes to take effect!
+
 logLevel: info
 rtspAddress: :8554
 
