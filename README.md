@@ -17,6 +17,11 @@ After PMIC failure on Raspberry Pi 5, I realized that I needed a robust piece of
 4. Ubuntu OS deployment successful and Linux CLI familiarity strongly improved. Easily able to navigate file structures, edit files, check services, and system performance utilizing CLI via headless ssh.
 5. No re-deployment utilizing terraform/ansible yet.
 
-**Update 18 June, 2026
+**Update 18 June, 2026**
+
 Downloaded repository for Odysseus, open source front-end for self-hosted models. It works well, but I've noticed that the gemma models don't do very well with my CPU, even with 16GB RAM overhead. Tried Qwen models and they function somewhat better, but I can tell that the hardware is a bottleneck for speed and accuracy. SearXNG parsing works better with the smaller Qwen models.
 Re-initialized MediaMTX RTSP and established system-level background service to auto-start RTSP upon system start-up. Functionality via VLC confirmed.
+
+
+**Update 24 June, 2026**
+Spent the first part of this week setting up a Linux environment on a small partition on my main Windows workstation. Shrunk disk space to allocate 40GB and loaded Fedora 44 onto it to resolve routing table issues between NordVPN and Tailscale on Windows. Now that I have a dedicated home workspace in Linux, I can keep pursuing my projects without Windows hurdles or utilizing just my laptop.
